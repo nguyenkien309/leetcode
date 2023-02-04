@@ -1,4 +1,6 @@
 //Find Pivot Index
+// find index , total left(index) = right(index)
+
 nums = [1, 7, 3, 6, 5, 6];
 const pivotIndex = (nums) => {
   const total = nums.reduce((a, b) => a + b);

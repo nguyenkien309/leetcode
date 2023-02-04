@@ -1,5 +1,4 @@
 //Two Sum
-
 nums = [2, 5, 5, 11];
 target = 10;
 const twoSum = (nums, target) => {

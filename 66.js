@@ -1,5 +1,6 @@
 //Plus One
 // +1 at last index of array
+
 digits = [1, 2, 3];
 const plusOne = (digits) => {
   let string = '';
@@ -16,5 +17,5 @@ const plusOne = (digits) => {
       .map((x) => parseInt(x))
   );
 };
-
+//2nd way : return (BigInt(digits.join('')) + 1n).toString().split('').map(Number);
 plusOne(digits);

@@ -9,8 +9,9 @@ const removeDuplicates = (nums) => {
   for (i = 0; i < nums.length; i++) {
     if (nums[i] != nums[i + 1]) {
       arr.push(nums[i]);
-    } else {
     }
   }
+  console.log(arr);
+  return arr;
 };
 removeDuplicates(nums);

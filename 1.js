@@ -14,3 +14,20 @@ const twoSum = (nums, target) => {
   }
 };
 twoSum(nums, target);
+
+// const twoSum = (arr, target) => {
+//   const arrMap = new Map();
+
+//   for (let i = 0; i < arr.length; i++) {
+//     const num = arr[i];
+//     const expectNum = target - num;
+
+//     if (arrMap.has(expectNum)) {
+//       return [num, expectNum];
+//     }
+
+//     arrMap.set(num, i);
+//   }
+
+//   return null;
+// };

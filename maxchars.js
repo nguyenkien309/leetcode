@@ -1,3 +1,4 @@
+// find longest char exist in a string 
 const maxChars = (str) => {
   const strArray = str.split("");
   let maxChar = "";

@@ -1,6 +1,8 @@
 //Two Sum
 nums = [2, 5, 5, 11];
 target = 10;
+
+// O(n^2)
 const twoSum = (nums, target) => {
   for (i = 0; i < nums.length; i++) {
     fn = nums[i];
@@ -14,6 +16,19 @@ const twoSum = (nums, target) => {
   }
 };
 twoSum(nums, target);
+
+// O(n)
+const twoSum2 = (nums, target) => {
+  for (i = 0; i < nums.length - 1; i++) {
+    const flag = nums.indexOf(target - nums[i], i + 1);
+    if (flag !== -1) return [i, nums.indexOf(target - nums[i], i + 1)];
+  }
+
+  return null;
+};
+
+console.log(twoSum2([3, 2, 4], 6));
+
 
 // const twoSum = (arr, target) => {
 //   const arrMap = new Map();

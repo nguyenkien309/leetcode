@@ -11,3 +11,16 @@ const maxProfit = (prices) => {
   return max;
 };
 console.log(maxProfit(prices));
+
+// O(n)
+const maxProfit2 = (prices) => {
+  let buyOn = prices[0];
+  let profit = 0;
+  for (i = 1; i < prices.length; i++) {
+    if (prices[i] - buyOn > profit) profit = prices[i];
+    buyOn = prices[i];
+  }
+
+  return profit;
+};
+console.log(maxProfit2(prices));
